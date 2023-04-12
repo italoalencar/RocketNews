@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    background-color: yellow;
+    overflow: hidden;
+}
+
+
+.left {
+    background-color: var(--body-bg-color);
+    position: absolute;
+    width: 720px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    font-family: Spartan, Work Sans;
+    z-index: 1;
+    
+}
+
+header img {
+    position: absolute;
+    width: 389px;
+    height: 94px;
+    left: 30px;
+    top: 50px;
+}
+
+.texto {
+    position: absolute;
+    left: 36px;
+    top: 236px;
+}
+
+.texto h2 {
+    color: var(--title-color);
+}
+
+.texto h3, .texto p {
+    color: var(--text-color);
+}
+
+.form {
+    color: var(--form-color);
+    position: absolute;
+    width: 798px;
+    height: 84px;
+    left: 36px;
+    top: 420px;
+}
+
+.enviar-mail {
+    display: flex;
+}
+
+.form img {
+    background-color: var(--bg-button-color);
+}
+
+.form input, .form button {
+    border: none;
+    border-radius: 0;
+    height: 40px;
+    width: 40px;
+}
+
+.form input {
+    border-left: 4px solid var(--title-color);
+    padding-left: 8px;
+    width: 100%;
+}
+
+.form button {
+    align-items: center;
+    padding: 0 8px;
+    cursor: pointer;
+    background-color: var(--bg-button-color);
+}
+
+.form button img {
+    display: inherit;
+}
+
+.direciona {
+    display: flex;
+   /*  flex-direction: row;
+    align-items: center;
+    padding: 0 auto;
+    gap: 5px;
+
+    color: var(--bg-button-color);
+    position: relative;
+    width: 196px max-content;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--bg-button-color);
+
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+ */
+    position: relative;
+    height: 24px;
+    width: 196px;
+    left: 36px;
+    top: 522px;
+}
+
+.direciona a {
+    text-decoration: none;
+    color: var(--bg-button-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.18rem;
+    display: flex;
+    align-items: center;
+}
+
+.direciona a svg {
+    fill: var(--bg-button-color);
+}
+
+.right {
+    position: absolute;
+    width: 990px;/* 973px; */
+    height: 100%;
+    left: 376px;
+    top: 0px;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+}
